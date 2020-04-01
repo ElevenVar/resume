@@ -1,0 +1,25 @@
+<swiper style='height:{{height}}px;'>
+  <!-- 封面 -->
+  <swiper-item>
+    <!-- <image src="../../img/photo.png" mode="widthFix" class="photo" style='height:100vh'></image> -->
+    <include src="../cover/cover.wxml" />
+  </swiper-item>
+  <!-- 基本信息 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <include src="../info/info.wxml" />
+    </scroll-view>
+  </swiper-item>
+  <!-- 项目信息 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <include src="../project/project.wxml" />
+    </scroll-view>
+  </swiper-item>
+  <!-- 自我评价 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width:{{width}}px;height:{{height}}px">
+      <include src="../mySelf/mySelf.wxml" />
+    </scroll-view>
+  </swiper-item>
+</swiper>

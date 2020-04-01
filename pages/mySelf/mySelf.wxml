@@ -1,0 +1,24 @@
+<view class="resume">
+  <view class="section">
+    <view class="section-info">
+      <view class="section-seq">6</view>
+      <text class="section-title">更多项目</text>
+    </view>
+     <view class="project" wx:for="{{morePorject}}" wx:key="item">
+      <view class="small-project">
+        <text>{{item.name}}</text>
+      </view>
+      <rich-text class="text-link">{{item.url}}</rich-text>
+    </view>
+  </view>
+  <view class="section">
+    <view class="section-info">
+      <view class="section-seq">7</view>
+      <text class="section-title">自我评价</text>
+    </view>
+    <view class="introduction">
+      <rich-text class="desc">{{introduction}}</rich-text>
+    </view>
+  </view>
+  <text class="page">4/4</text>
+</view>

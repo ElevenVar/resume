@@ -1,0 +1,16 @@
+<view class="resume">
+  <view class="section">
+    <view class="section-info">
+      <view class="section-seq">5</view>
+      <text class="section-title">工作经历</text>
+    </view>
+    <view class="project" wx:for="{{project}}" wx:key="item">
+      <view class="project-name">
+        <image src="../../img/icon_computer.png" class="icon-computer"></image>
+        <text>{{item.name}}</text>
+      </view>
+      <rich-text class="desc">{{item.desc}}</rich-text>
+    </view>
+  </view>
+  <text class="page">3/4</text>
+</view>
